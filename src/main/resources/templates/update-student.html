@@ -127,9 +127,9 @@
 </nav>
 
 <div class="container" style="padding-top: 20px">
-  <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-      <h1 class="text-center" style="padding-top: 10px">Update the Details Of <span th:text="${student.fName}"></span> </h1>
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8 col-sm-10 container justify-content-center card">
+      <h1 class="text-center py-2" style="padding-top: 10px">Update the Details Of <span th:text="${student.fName}"></span> </h1>
       <div class="card-body">
         <form th:action="@{/students/{id} (id=${student.id})}" th:object="${student}" method="post">
           <div class="form-group">
@@ -160,55 +160,10 @@
 </br> <br>
 <section id="footer">
   <div class="container">
-    <div class="row text-center text-xs-center text-sm-left text-md-left">
-      <div class="col-xs-12 col-sm-4 col-md-4">
-        <h5> Quick links </h5>
-        <ul class="list-unstyled quick-links">
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Videos </a> </li>
-        </ul>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4">
-        <h5> Quick links </h5>
-        <ul class="list-unstyled quick-links">
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Our Services </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Expert Team </a> </li>
-        </ul>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4">
-        <h5> Quick links </h5>
-        <ul class="list-unstyled quick-links">
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a></li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>
-          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Contact </a> </li>
-        </ul>
-      </div>
-    </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-        <ul class="list-unstyled list-inline social text-center">
-          <li class="list-inline-item"> <a href="#"> <i class="fa fa-facebook"> </i> </a> </li>
-          <li class="list-inline-item"> <a href="#"> <i class="fa fa-twitter"> </i> </a> </li>
-          <li class="list-inline-item"> <a href="#"> <i class="fa fa-instagram"> </i> </a> </li>
-          <li class="list-inline-item"> <a href="#"> <i class="fa fa-google-plus"> </i > </a> </li>
-          <li class="list-inline-item"> <a href="#"> <i class="fa fa-envelope"> </i> </a> </li>
-        </ul>
+      <div class="col-12 text-center py-3" style="background:#343a40;color:#fff;">
+        <small>© 2025 Rajat Pandey — Student Management System</small>
       </div>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-        <p class="h6"> 2022 - All right Reversed. <a class="text-green ml-2" href="#" target="_blank">-Rajat Pandey </a> </p>
-      </div>
-      <hr>
     </div>
   </div>
 </section>
