@@ -16,6 +16,11 @@ public class StudentController {
         this.service = service;
     }
 
+    // Redirect root to students page
+    @RequestMapping("/")
+    String redirectToStudents(){
+        return "redirect:/students";
+    }
 
     //get all students
     @RequestMapping("/students")
@@ -45,7 +50,6 @@ public class StudentController {
 
     @GetMapping("students/update/{id}")
     String updateStudentForm(@PathVariable("id")Long id, Model model) throws Exception{
-        Student student = new Student();
         model.addAttribute("student", service.getStudentById(id));
         return "update-student";
     }
