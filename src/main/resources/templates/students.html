@@ -117,21 +117,28 @@
         th{
             text-align: center;
         }
+        
+        /* Active navigation styling */
+        .navbar-nav .nav-link.active {
+            background-color: #007bff !important;
+            color: white !important;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
 <div class="main-content">
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="#">SMS</a>
+    <a class="navbar-brand" href="/students">SMS</a>
 
     <!-- Links -->
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="#">All Students</a>
+            <a class="nav-link active" href="/students">All Students</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="students/add">Add Students</a>
+            <a class="nav-link" href="/students/add">Add Students</a>
         </li>
 
         <!-- Dropdown -->
